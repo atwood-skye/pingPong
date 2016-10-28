@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <link href="css/bootstrap.min.css" type="text/css" rel="stylesheet">
+    <link href="css/bootstrap.css" type="text/css" rel="stylesheet">
     <link href="css/styles.css" type="text/css" rel="stylesheet">
     <script src="js/jquery-3.1.1.js"></script>
     <script src="js/scripts.js"></script>
@@ -10,24 +10,37 @@
   </head>
   <body>
     <div class="container">
-      <div class ="jumbotron">
         <h1>Let's play Ping-Pong!</h1>
-      </div>
-        <h3>The Rules:</h3>
-        <h4>Ping Pong will count up to your number starting from 1 with the following exceptions:</h4>
-        <ul>
-          <li>Numbers divisible by 3 become 'ping'</li>
-          <li>Numbers divisible by 5 become 'pong'</li>
-          <li>Numbers divisible by 15 become 'pingpong'</li>
-        </ul>
-      <form>
-        <input type="number" name="input" id="input">
-        <button type="submit" class="btn btn-danger">Play!</button>
-      </form>
-      <div>
-        <ul id="answer">
-          <li></li>
-        </ul>
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-md-2" id="side">
+              <h3 id="about">About<br>Ping-Pong</h3>
+              <h4>Created by:</h4>
+              <p>Skye Atwood</p>
+              <h4>GitHub Username/URL:</h4>
+              <p>atwood-skye</p>
+              <h4>Level 1 Test for:</h4>
+              <p>Intro to Programming, Epicodus</p>
+            </div>
+            <div class="col-md-10">
+              <h3>The Rules:</h3>
+              <h4>Ping Pong will count up to your number starting from 1 with the following exceptions:</h4>
+              <ul>
+                <li>- Numbers divisible by 3 become 'ping'</li>
+                <li>- Numbers divisible by 5 become 'pong'</li>
+                <li>- Numbers divisible by 15 become 'pingpong'</li>
+              </ul><br>
+            <form>
+              <input type="number" name="input" id="input">
+              <button type="submit" class="btn btn-danger">Play!</button>
+            </form>
+            <div>
+              <ul id="answer">
+                <li></li>
+              </ul>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </body>
